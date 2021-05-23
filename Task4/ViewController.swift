@@ -11,11 +11,11 @@ class ViewController: UIViewController {
 
     @IBOutlet private weak var label: UILabel!
 
-    private var numForLable = 0
+    private var numForLabel = 0
 
     @IBAction private func didTapPlusOne(_ sender: Any) {
 
-        numForLable += 1
+        numForLabel += 1
 
         reflectNumberToLabel()
 
@@ -23,14 +23,14 @@ class ViewController: UIViewController {
 
     @IBAction private func didTapClear(_ sender: Any) {
 
-        numForLable = 0
+        numForLabel = 0
 
         reflectNumberToLabel()
 
     }
 
     private func reflectNumberToLabel() {
-        label.text = "\(numForLable)"
+        label.text = "\(numForLabel)"
     }
 
 }
